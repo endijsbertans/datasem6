@@ -9,8 +9,6 @@ public class MyEdgeNode {
     public MyEdgeNode(int indexOfNeighbour, float weight) {
         setIndexOfNeighbour(indexOfNeighbour);
         setWeight(weight);
-
-
     }
 
     public void setIndexOfNeighbour(int indexOfNeighbour) {
@@ -49,5 +47,15 @@ public class MyEdgeNode {
 
     public MyEdgeNode getPrevious() {
         return previous;
+    }
+
+    @Override
+    public String toString() {
+        return "MyEdgeNode{" +
+                "indexOfNeighbour=" + indexOfNeighbour +
+                ", weight=" + weight +
+                ", next=" + next +
+                ", previous=" + previous +
+                '}';
     }
 }
